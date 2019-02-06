@@ -10,7 +10,17 @@
 
     .company-logo{
         height: 90px;
-        background-image: linear-gradient(to right, #345798, #1c1c3c);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #e2dede;
+        background-color: #1f345f;
+
+        .icon{
+            content: url('../../../assets/images/puzzle.svg');
+            height: 45px;
+            width: 45px;
+        }
     }
 
     ul{
@@ -22,25 +32,38 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-end;
-            height: 75px;
+            height: 55px;
             list-style-type: none;
             color: #797979bd;
             padding: 5px;
             font-family: 'Maven Pro', sans-serif;
             font-size: 14px;
+            cursor: pointer;
+            margin: 15px 0;
 
             .dashboard{
                 content: url('../../../assets/images/dashboard.svg');
-                height: 45px;
+                height: 35px;
                 width: 30px;
             }
 
             .sales{
                 content: url('../../../assets/images/notepad.svg');
-                height: 45px;
+                height: 35px;
+                width: 30px;
+            }
+
+            .maps{
+                content: url('../../../assets/images/placeholder.svg');
+                height: 35px;
                 width: 30px;
             }
             
+        }
+
+        li.active{
+            border-right: 2px solid rgb(82, 128, 165);
+            background-color: #80808017;
         }
     }
 }
