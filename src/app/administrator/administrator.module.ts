@@ -3,11 +3,11 @@ import { CommonModule } from '@angular/common';
 import { AdministratorComponent } from './administrator.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SalesComponent } from './sales/sales.component';
 import { AdminRouter } from './administrator-routing';
+import { CreateSalesComponent } from './create-sales/create-sales.component';
 
 @NgModule({
-  declarations: [AdministratorComponent, SideMenuComponent, DashboardComponent, SalesComponent],
+  declarations: [AdministratorComponent, SideMenuComponent, DashboardComponent, CreateSalesComponent],
   imports: [
     CommonModule,
     AdminRouter
